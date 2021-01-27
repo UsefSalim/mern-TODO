@@ -1,0 +1,32 @@
+{
+  "name": "final-todos",
+  "version": "1.0.0",
+  "description": "todo list mern ",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UsefSalim/mern-TODO.git"
+  },
+  "keywords": [
+    "mern",
+    "app",
+    "reactjs",
+    "expressjs"
+  ],
+  "author": "salim youssef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UsefSalim/mern-TODO/issues"
+  },
+  "homepage": "https://github.com/UsefSalim/mern-TODO#readme",
+  "dependencies": {
+    "@ucef/mernpack": "^1.0.13"
+  }
+}
