@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/UsefSalim/mern-TODO#readme",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "@ucef/mernpack": "^1.0.13"
   }
 }

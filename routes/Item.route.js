@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-const { getAll, addItem, deletItem } = require('../controllers/Item.controller')
+const { getAll, addItem, deletItem,deletAllItems,updateItem } = require('../controllers/Item.controller')
 
 
 
@@ -19,10 +19,23 @@ router.get('/', getAll)
 router.post('/', addItem)
 
 /* ! @Route  : POST => api/item/id
-     Desc    : Create Item
+     Desc    : Delete Item
      @Access : Pubic
 */
 router.delete('/:id', deletItem)
+
+/* ! @Route  : DELETE => api/item/
+     Desc    : Delete All items
+     @Access : Pubic
+*/
+router.delete('/',deletAllItems)
+
+// /* ! @Route  : UPDATE => api/item/:id
+//      Desc    : UPDATE  item
+//      @Access : Pubic
+// */
+// router.put('/:id',updateItem)
+
 
 
 module.exports = router;

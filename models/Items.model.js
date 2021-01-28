@@ -6,6 +6,14 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
+  description:{
+    type:String,
+    required: true
+  },
+  validation:{
+    type:Boolean, 
+    default: false
+},
   date: {
     type: Date,
     default: Date.now
