@@ -19,10 +19,11 @@ class Nav extends Component {
   render() {
     return (
       <nav>
-        <img src={Logo} alt="" sizes="" srcset="" />
+        <img src={Logo} alt="Todo Liste Logo"/>
         <code>
           {this.state.date.toLocaleDateString()}{" "}
           {this.state.date.toLocaleTimeString()}
+          {" "} <div>+</div>
         </code>
       </nav>
     );

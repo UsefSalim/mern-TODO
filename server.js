@@ -25,7 +25,7 @@ mongoose
 
 //* -------------------------------------Use Routes 
 
-app.use('/api/items', itemRoutes)
+app.use('/api/todos', itemRoutes)
 
 //* ---- ---------------------------------Port APP
 const PORT = process.env.PORT || 5000
