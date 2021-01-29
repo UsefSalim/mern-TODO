@@ -1,16 +1,19 @@
-import React,{Component} from 'react'
-class App extends Component{
-  state = {
-
-  }
+import React from 'react';
+import './assets/css/App.css';
+import Nav from './Components/Nav';
 
 
+class App extends React.Component {
 
-  render(){
-    return(
-      <>
-      <h1>test</h1>
-      </>
+
+
+  render() {
+    return (
+      <div className="container">
+        <Nav></Nav>
+      </div>
     )
   }
 }
+
+export default App;
